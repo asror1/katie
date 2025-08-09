@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="icon" type="image/x-icon" href="deer.ico" />
-    <title>Happy Birthday Katie!</title>
+    <link rel="icon" type="image/x-icon" href="hi.ico" />
+    <title>Kathy!</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
@@ -18,28 +17,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(135deg, #ff8ab1, #ffffff);
-        background-size: 400% 400%;
-        animation: backgroundAnimation 10s ease infinite;
+        background: #e4ffdf;
         overflow: hidden;
         text-align: center;
       }
 
-      @keyframes backgroundAnimation {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-
       h1 {
         font-size: 3rem;
-        color: #42f386;
+        color: #62fc9d;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         margin: 0;
         animation: fadeIn 2s ease-in-out;
@@ -55,14 +40,10 @@
       }
 
       img {
-        position: absolute;
-        right: 10px;
-        bottom: 10px;
         width: 25vw;
         min-width: 200px;
         max-width: 300px;
         height: auto;
-        animation: imageSlideUp 1s ease-in-out forwards;
       }
 
       @keyframes imageSlideUp {
@@ -76,45 +57,35 @@
         }
       }
       span {
-        padding: 8px 15px;
-        background-color: #1d1b1b;
-        color: #ffffff;
-        border: 1px solid black;
-        border-radius: 10px;
-        margin: 1rem;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
         font-size: 1.5rem;
-        animation: dropBounce 1.5s ease-in-out;
+        animation: imageSlideUp 1.5s ease-in-out;
+        cursor: pointer;
+        p {
+          padding: 8px 15px;
+          background-color: #1d1b1b;
+          position: relative;
+          top: -65px;
+          color: #ffffff;
+          border-radius: 8px 8px 0 8px;
+          max-height: fit-content;
+        }
         a {
           all: unset;
-        }
-      }
-      @keyframes dropBounce {
-        0% {
-          transform: translateY(-200px);
-          animation-timing-function: ease-in;
-          opacity: 0;
-        }
-        50% {
-          transform: translateY(20px);
-          animation-timing-function: ease-out;
-          opacity: 0.5;
-        }
-        70% {
-          transform: translateY(-10px);
-          animation-timing-function: ease-in;
-          opacity: 0.7;
-        }
-        100% {
-          transform: translateY(0);
-          animation-timing-function: ease-out;
-          opacity: 1;
+          display: flex;
+          flex-direction: row;
         }
       }
     </style>
   </head>
   <body>
     <h1>Happy Birthday Katie!</h1>
-    <img src="./hi.png" alt="little crow image" />
-    <span><a href="https://tinyurl.com/mwxtfj8u">Click Me!</a></span>
+    <span
+      ><a href="https://tinyurl.com/mwxtfj8u"
+        ><p>Click Me!</p>
+        <img src="./hi.png" alt="crow image" /> </a
+    ></span>
   </body>
 </html>
